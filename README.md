@@ -23,6 +23,16 @@ Sementara untuk komponen-komponen dari program ini, antara lain:
 5. `connection.php` : Digunakan untuk menyimpan konfigurasi koneksi ke database.
 6. `index.php` & `membership.php` : Digunakan untuk menyimpan kondisi-kondisi pada data member dan membership yang kemudian akan mengakses controller.
 
+## Alur Program
+1. Ketika pengguna membuka program untuk pertama kali, pengguna akan diarahkan ke `index.php` yang berisikan data-data dari member dalam bentuk tabel.
+2. Di dalam halaman `index.php` ini, pengguna memiliki opsi untuk menambah anggota baru dengan mengklik tombol "Add New Member" yang mengarahkan mereka ke halaman `MemberForm.view.php`.
+3. Pada halaman `MemberForm.view.php`, pengguna dapat mengisi formulir member baru yang terdiri dari Nama, Email, No.Telp, Membership yang dipilih, dan tanggal join. Setelah selesai mengisi formulirnya, pengguna dapat menekan tombol "Submit". apabila terdapat tampilan pesan yang memberitahukan bahwa data sudah berhasil atau gagal untuk ditambahkan, jika berhasil maka data member baru telah dimasukkan ke dalam database.
+4. Selain menambahkan member baru, Pengguna juga dapat memperbarui data dan menghapus anggota yang sudah terdaftar dengan menekan tombol "Edit" atau "Delete" di bagian kanan dari tabel yang menampilkan list anggota.
+5. Ketika tombol "Edit" ditekan, maka pengguan akan dibawa ke halaman `MemberForm.view.php` yang sudah terisi data dari member yang dipilih, pengguna dapat mengedit detail anggota dan menyimpan perubahannya.
+6. Ketika tombol "Delete" ditekan, maka program ini akan menghapus data member yang sudah dipilih sebelumnya dan menampilkan pesan konfirmasi penghapusan dan pemberitahuan ketika data telah berhsail atau gagal dihapus.
+7. Setelah pengguna melakukan edit atau penghapusan pada data, maka pengguna akan diarahkan ke halaman utama yang sudah diperbarui secara otomatis sesuai dengan perubahan yang terjadi pada database.
+8. Selain melihat data dan melakukan operasi CRUD pada member, pengguna juga dapat melakukan hal yang sama pada data membership ketika pengguna menekan tombol "Membership" di navbar. Hal-hal yang dapat dilakukan pada data member diatas dapat juga dilakukan pada data-data membership.
+
 ## Dokumentasi
 https://github.com/Osaraku/TP4DPBO2024C2/assets/117560099/2fe1d9fb-5fcc-4811-b56f-4dc96d1a67c5
 
